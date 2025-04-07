@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        border:1px solid;
+        padding: 20px;
+        border-radius: 10px ;
+        background-color: #f8f8f8;      
+    }
+    form{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px; 
+        align-items: center;   
+
+    }
+    form input{
+        margin: 20px;
+        height: 30px;
+        width: 90%;
+        border-radius:10px;
+    }
+    form button{
+        width: 60%;
+        height: 30px;
+        border-radius:10px;
+        padding: 20px;   
+        text-align: center;  
+        margin: 5px;   
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<body>
+    <div  class="container">
+        <div class="wrapper">
+
+            <form action="/logIn" method="post">
+                <input type="email" placeholder="email" required   name="email"   />
+                <input type="password" placeholder="password" required  name="password"/>
+                <button type="submit">submit</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
