@@ -58,7 +58,7 @@ app.post('/signUp', async (req,res)=>{
         maxAge:360000,
         
     })
-    res.status(201).json({ message: `Welcome, ${name}!` });
+    res.status(201).send({ message: `Welcome, ${name}!` });
 
     }
     catch(err)
